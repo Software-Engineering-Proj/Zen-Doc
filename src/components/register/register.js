@@ -87,6 +87,20 @@ class Register extends Component {
                                                 />
                                             </Grid>
                                         </Grid>
+                                        <Grid item>
+                                            <TextField InputProps={{className: classes.TextField}}
+                                                id="username"
+                                                label="Username"
+                                                type="username"
+                                                name="username"
+                                                autoComplete="username"
+                                                margin="dense"
+                                                variant="outlined"
+                                                required
+                                                onChange={this.handleChange}
+                                                fullWidth={true}
+                                                />
+                                        </Grid>
                                         <Grid item >
                                             <TextField InputProps={{className: classes.TextField}}
                                                 id="email"
@@ -113,7 +127,7 @@ class Register extends Component {
                                                 fullWidth={true} />
                                         </Grid>											
                                     </Grid>
-                                    <button type="submit" className={classes.Submit}>SIGN IN</button>
+                                    <button type="submit" className={classes.Submit}>SIGN UP</button>
                                 </Grid>
                             </form>
                         <div>

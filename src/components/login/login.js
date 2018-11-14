@@ -54,12 +54,23 @@ class Login extends Component {
 							</div>
 							<h1 className={classes.Title}>Sign In</h1>
 							<form id="myForm" className={classes.Form} onSubmit={this.handleSubmit}>
-								<TextField InputProps={{className: classes.TextField}}
+								{/* <TextField InputProps={{className: classes.TextField}}
 									id="email"
 									label="Email"
 									type="email"
 									name="email"
 									autoComplete="email"
+									margin="dense"
+									variant="outlined"
+									onChange={this.handleChange}
+									fullWidth={true}
+									/> */}
+								<TextField InputProps={{className: classes.TextField}}
+									id="username"
+									label="Username"
+									type="username"
+									name="username"
+									autoComplete="username"
 									margin="dense"
 									variant="outlined"
 									onChange={this.handleChange}
